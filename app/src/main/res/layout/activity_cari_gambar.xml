@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffd5d5"
+    tools:context="com.example.android.rizkanursyahdilla_1202154305_modul4.CariGambar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cari Gambar"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/Link"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="http://4.bp.blogspot.com/-AkB3sdz9rds/VXGoe5c8yjI/AAAAAAAANHg/kVBavEX9gWg/s1600/bismillah-hitam-transparant.png"
+        />
+
+    <Button
+        android:id="@+id/btnCari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Klik Untuk Mencari Gambar"
+        android:onClick="Cari"/>
+
+    <ImageView
+        android:id="@+id/GambarTampil"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
